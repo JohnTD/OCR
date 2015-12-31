@@ -96,7 +96,7 @@ int main( int argc, char** argv )
         rectangle(test, p1, p2, color);
     }
 
-    //imwrite("../test.jpg", test);
+    //imwrite("../57_cnt.jpg", test);
     namedWindow("contours", WINDOW_AUTOSIZE);
     imshow("contours", test);
     waitKey(0);

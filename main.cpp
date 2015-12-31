@@ -69,11 +69,11 @@ int main( int argc, char** argv )
 
     int* src = new int[height*width]();
 
-    for(int i = 0; i < height; ++i)
+    for(int j = 0; j < height; ++j)
     {
         uchar* u = img.ptr<uchar>(i);
-        for(int j = 0; j < width; ++j)
-            src[i*width+j] = (int)*u++;
+        for(int i = 0; i < width; ++i)
+            src[j*width+i] = (int)*u++;
     }
 
     int thresh = oTsu(src, height, width);
